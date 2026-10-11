@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-10-11T12:37:12.182Z" agent="Antigravity" version="22.0.0" type="device">
+  <diagram id="hifi-portfolio-framework" name="Hi-Fi Portfolio Framework">
+    <mxGraphModel dx="2000" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="3000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cell_2" value="BEA MATIAS NICOR - HIGH-FIDELITY (HI-FI) PORTFOLIO FRAMEWORK &amp;amp; DESIGN SYSTEM
+Course: BS Information Systems | Institution: Carlos Hilado Memorial State University (CHMSU)" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#0F172A;strokeColor=#38BDF8;fontColor=#FFFFFF;fontSize=18;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="2320" height="2500" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_3" value="1. DESIGN TOKENS &amp;amp; ATOMIC SPECS" style="text;html=1;strokeColor=none;fillColor=#1E293B;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=1;fontColor=#38BDF8;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="70" y="120" width="440" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_4" value="Color Palette Tokens
+• Primary Dark: #0B0D14 (Deep Void)
+• Card Surface: #151926 (Glassmorphic 85%)
+• Accent Primary: #6366F1 (Indigo Glow)
+• Accent Secondary: #8B5CF6 (Purple Pulse)
+• Success / Lab: #10B981 (Emerald Mint)
+• Warning: #F59E0B (Amber Threat)
+• Text Primary: #F8FAFC | Muted: #94A3B8" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#6366F1;fontColor=#F8FAFC;align=left;spacingLeft=15;fontSize=12;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="70" y="180" width="440" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_5" value="Typography Scale (Google Fonts)
+• Display H1: Outfit / Bold / 42px (1.2 line-height)
+• Section H2: Outfit / SemiBold / 28px
+• Subhead H3: Outfit / Medium / 20px
+• Body Text: Plus Jakarta Sans / 15px / Regular
+• Monospace/Code: Fira Code / 13px (Cyber Lab)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#8B5CF6;fontColor=#F8FAFC;align=left;spacingLeft=15;fontSize=12;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="70" y="350" width="440" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_6" value="Layout Grid &amp;amp; Elevation
+• Desktop Grid: 12 Columns (Max 1200px container)
+• Mobile Grid: 4 Columns (Fluid, 16px gutter)
+• Elevation 1: 0 4px 16px rgba(0,0,0,0.4)
+• Glass Blur: backdrop-filter: blur(16px)
+• Border Radius: Cards: 16px | Buttons: 12px | Pills: 9999px" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#06B6D4;fontColor=#F8FAFC;align=left;spacingLeft=15;fontSize=12;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="70" y="500" width="440" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_7" value="2. INFORMATION ARCHITECTURE &amp;amp; FLOW" style="text;html=1;strokeColor=none;fillColor=#1E293B;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=1;fontColor=#38BDF8;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="70" y="660" width="440" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_8" value="Sitemap &amp;amp; Navigation Flow:
+1. Global Nav (Sticky Glass Header)
+   ├─ [About Me] &amp;rarr; Experience &amp;amp; Goals
+   ├─ [Projects] &amp;rarr; Live Demos &amp;amp; Code
+   ├─ [Security Lab] &amp;rarr; Interactive Phishing Simulator
+   ├─ [Tools &amp;amp; Stack] &amp;rarr; Tech Competencies
+   ├─ [Education] &amp;rarr; CHMSU BSIS &amp;amp; Certifications
+   ├─ [Contact] &amp;rarr; Form &amp;amp; Direct Channels
+   └─ [Resume Mode] &amp;rarr; 1:1 Printable PDF Sheet
+2. Modals Layer:
+   ├─ Phishing Red-Flag Modal
+   ├─ Profile Avatar Customizer
+   └─ Certificate Verification Dialog" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#10B981;fontColor=#F8FAFC;align=left;spacingLeft=15;fontSize=12;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="70" y="720" width="440" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_9" value="3. DESKTOP HIGH-FIDELITY WIREFRAME (Viewport 1440px)" style="text;html=1;strokeColor=none;fillColor=#1E293B;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=1;fontColor=#38BDF8;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="550" y="120" width="1200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_10" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0B0D14;strokeColor=#475569;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="550" y="180" width="1200" height="2300" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_11" value="🌐 https://busper.vercel.app  |  Bea Matias Nicor Portfolio" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1E293B;strokeColor=#334155;fontColor=#94A3B8;fontSize=12;align=left;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="560" y="190" width="1180" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_12" value="✨ B. NICOR        About    Projects    [🛡️ Security Lab]    Tools    Education    Certificates    Contact           [🎨 Theme]  [📄 Resume/PDF Mode]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#6366F1;fontColor=#FFFFFF;fontStyle=1;fontSize=12;align=left;spacingLeft=25;" vertex="1" parent="1">
+          <mxGeometry x="570" y="235" width="1160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_13" value="● AVAILABLE FOR INTERNSHIPS &amp;amp; COLLABORATIONS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#10B981;fontColor=#FFFFFF;fontSize=10;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="600" y="305" width="340" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_14" value="[AVATAR PHOTO]
+Bea Matias Nicor
+160x160 circular
+with status ring" style="ellipse;whiteSpace=wrap;html=1;fillColor=#232738;strokeColor=#6366F1;strokeWidth=3;fontColor=#FFFFFF;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="600" y="345" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_15" value="Hello, I am
+BEA MATIAS NICOR
+Information Systems Student &amp;amp; Tech Explorer
+
+Passionate about systems analysis, modern web design, and cybersecurity fundamentals.
+Studying at Carlos Hilado Memorial State University (CHMSU).
+
+[ EXPLORE PROJECTS ]    [ 🛡️ LAUNCH SECURITY LAB ]    📞 09123456789    ✉️ beamatiasnicor@gmail.com" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#334155;fontColor=#F8FAFC;align=left;spacingLeft=20;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="770" y="345" width="940" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_16" value="🛡️ INTERACTIVE SECURITY LAB: PHISHING DETECTOR &amp;amp; SIMULATOR" style="text;html=1;fontStyle=1;fontColor=#38BDF8;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="520" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_17" value="INBOX SIMULATOR (Scenario 01/03)
+From: support@chmsu-portal-security.net
+Subject: URGENT: Verify your Student Portal account within 24h
+
+Dear Bea,
+We detected unauthorized login attempts on your student portal.
+Please click the link below to verify your student credentials immediately:
+&gt;&gt;&gt; http://chmsu-portal-verify.com/login-reset?id=99281 &lt;&lt;&lt;
+Failure to do so will result in suspension.
+
+[ FLAG AS PHISHING ATTACK ]    [ MARK AS SAFE EMAIL ]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1E293B;strokeColor=#EF4444;strokeWidth=2;fontColor=#F8FAFC;fontFamily=Courier New;fontSize=11;align=left;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="600" y="560" width="680" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_18" value="REAL-TIME SECURITY ANALYSIS &amp;amp; TELEMETRY
+• Sender Domain Mismatch: Suspicious (.net vs .edu.ph)
+• Urgency Manipulation: Threatening deadline
+• Malicious Anchor Tag: Masked fake domain
+• Header DKIM/SPF: FAILED / SPOOFED
+
+Score: 100/100 | Threat Level: CRITICAL (98%)
+Educational Takeaway: Never enter institutional credentials on unverified third-party domains." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#F59E0B;fontColor=#F8FAFC;fontSize=11;align=left;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="560" width="410" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_19" value="📂 FEATURED PROJECTS &amp;amp; TECHNICAL WORK" style="text;html=1;fontStyle=1;fontColor=#38BDF8;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="810" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_20" value="Project 01: Phishing Awareness Lab
+• Tech: HTML5, CSS3, Vanilla JS
+• Type: Interactive Cybersecurity Sandbox
+• Features: Scoring, Header Inspection, Hints
+[ View Source ] [ Live Sandbox ]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#6366F1;fontColor=#F8FAFC;fontSize=11;align=left;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="600" y="850" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_21" value="Project 02: Student Information System
+• Tech: Database Design, SQL, PHP
+• Type: Academic Record Management
+• Features: Enrollment, Grading, Role-based Auth
+[ Case Study ] [ Architecture Diagram ]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#8B5CF6;fontColor=#F8FAFC;fontSize=11;align=left;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="980" y="850" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_22" value="Project 03: Community Directory Portal
+• Tech: Responsive Web, APIs, UI/UX
+• Type: Public Directory &amp;amp; Map Guide
+• Features: Category Filtering, Geolocation
+[ View Prototype ] [ Figma Link ]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#06B6D4;fontColor=#F8FAFC;fontSize=11;align=left;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="850" width="350" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_23" value="⚡ CORE SKILLS &amp;amp; TECHNOLOGICAL PROFICIENCY" style="text;html=1;fontStyle=1;fontColor=#38BDF8;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1030" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_24" value="Web &amp;amp; UI Design
+HTML5, CSS3, JavaScript
+Responsive Design, Wireframing
+Figma, Canva, Draw.io
+UI/UX Prototyping" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#334155;fontColor=#F8FAFC;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1070" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_25" value="Systems &amp;amp; Database
+Systems Analysis &amp;amp; Design
+MySQL / Relational DBs
+Data Flow Diagrams (DFD)
+Information Architecture" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#334155;fontColor=#F8FAFC;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="880" y="1070" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_26" value="Cybersecurity Concepts
+Phishing Detection &amp;amp; Triage
+Network Fundamentals
+Social Engineering Countermeasures
+Data Privacy Principles" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#334155;fontColor=#F8FAFC;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="1070" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_27" value="Workflow &amp;amp; Soft Skills
+Git &amp;amp; GitHub Versioning
+Vercel Deployment
+Problem Solving &amp;amp; Collaboration
+Technical Documentation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#334155;fontColor=#F8FAFC;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1440" y="1070" width="270" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_28" value="🎓 EDUCATION &amp;amp; CERTIFICATIONS" style="text;html=1;fontStyle=1;fontColor=#38BDF8;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1210" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_29" value="Carlos Hilado Memorial State University (CHMSU)
+Bachelor of Science in Information Systems (BSIS)
+• Relevant Coursework: Web Systems, Database Management, System Analysis
+• Focus: Software Usability, Secure Information Systems, Enterprise Architecture" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#10B981;fontColor=#F8FAFC;fontSize=11;align=left;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1250" width="540" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_30" value="Certificates &amp;amp; Training Badges
+• Foundations of Cybersecurity - Certified
+• Modern Web Development &amp;amp; Responsive UI Design
+• Database Foundations &amp;amp; SQL Querying Essentials
+[ View Certificate Credentials Modal ]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#8B5CF6;fontColor=#F8FAFC;fontSize=11;align=left;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="1250" width="540" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_31" value="📄 EMBEDDED 1:1 PRINTABLE RESUME SHEET MODE" style="text;html=1;fontStyle=1;fontColor=#38BDF8;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1380" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_32" value="Classic Resume Paper Container (White Sheet View)
+┌────────────────────────────────────────────────────────────────────────┐
+│ [Photo]  BEA MATIAS NICOR - INFORMATION SYSTEMS STUDENT                │
+│ Phone: 09123456789 | Email: beamatiasnicor@gmail.com | Talisay, Neg. Occ │
+├────────────────────────────────────────────────────────────────────────┤
+│ OBJECTIVE: Diligent Information Systems student seeking internship...  │
+│ EDUCATION: BSIS, Carlos Hilado Memorial State University               │
+│ SKILLS: Web Design, SQL, Systems Analysis, Cybersecurity Awareness     │
+│ PROJECTS: Interactive Security Lab, Student Records System             │
+└────────────────────────────────────────────────────────────────────────┘
+[ PRINT / SAVE AS PDF BUTTON ]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;fontColor=#0F172A;fontFamily=Courier New;fontSize=11;align=left;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1420" width="1110" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_33" value="📬 GET IN TOUCH &amp;amp; CONNECT
+Have an internship opportunity or want to collaborate on a system?
+Name Input [________________________]  Email [________________________]
+Message [______________________________________________________]
+[ SEND MESSAGE ]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#6366F1;fontColor=#F8FAFC;fontSize=11;align=left;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1615" width="1110" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_34" value="© 2026 Bea Matias Nicor. Information Systems • Carlos Hilado Memorial State University (CHMSU)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0F172A;strokeColor=none;fontColor=#64748B;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1750" width="1160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_35" value="4. MOBILE HI-FI VIEW (375px)" style="text;html=1;strokeColor=none;fillColor=#1E293B;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=1;fontColor=#38BDF8;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1800" y="120" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_36" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0B0D14;strokeColor=#64748B;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1800" y="180" width="520" height="2300" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_37" value="📱 9:41 AM  •  busper.vercel.app" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1E293B;fontColor=#94A3B8;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1810" y="190" width="500" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_38" value="✨ B. NICOR                     [🌙] [☰]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#151926;fontColor=#FFFFFF;fontStyle=1;fontSize=12;align=left;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="1810" y="225" width="500" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_39" value="[AVATAR]
+110x110" style="ellipse;whiteSpace=wrap;html=1;fillColor=#232738;strokeColor=#6366F1;fontColor=#FFFFFF;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1990" y="280" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_40" value="BEA MATIAS NICOR
+Information Systems Student
+CHMSU
+
+[ Projects ]  [ Security Lab ]
+📞 Call  |  ✉️ Email" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;fontColor=#F8FAFC;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1830" y="405" width="460" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_41" value="🛡️ Security Lab Simulator
+Scenario 1: Student Portal Phish
+[ Inspect Headers ]
+[ Flag Phish ] [ Mark Safe ]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1E293B;strokeColor=#EF4444;fontColor=#FFFFFF;fontSize=11;align=left;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="1830" y="545" width="460" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_42" value="Project 1: Phishing Sandbox
+Project 2: Student SIS Portal
+Project 3: Community Directory" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#6366F1;fontColor=#FFFFFF;fontSize=11;align=left;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="1830" y="675" width="460" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_43" value="Skills: Web (HTML/CSS/JS) • SQL •
+System Analysis • Cybersecurity • Git" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#334155;fontColor=#FFFFFF;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1830" y="790" width="460" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_44" value="Connect with Bea Nicor
+beamatiasnicor@gmail.com
+[ Switch to Printable CV ]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#151926;strokeColor=#10B981;fontColor=#FFFFFF;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1830" y="880" width="460" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
