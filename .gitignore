@@ -1,2 +1,5 @@
 .vercel
 .env*
+*.drawio
+hifi-framework.html
+wireframe.*
