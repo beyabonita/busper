@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="wireframe.css">
+</head>
+<body data-theme="grayscale">
+
+  <!-- =================================================================
+       MINIMAL WIREFRAME CONTROLLER BAR
+       ================================================================= -->
+  <header class="wf-topbar">
+    <div class="topbar-group">
+      <div class="icon-square" style="display:flex;align-items:center;justify-content:center;">
+        <i class="fa-solid fa-shapes"></i>
+      </div>
+      <span class="skel-bar h-md w-30" style="min-width: 110px;"></span>
+    </div>
+
+    <!-- Viewport Switcher -->
+    <div class="topbar-group">
+      <button class="btn-ctrl active" data-view="desktop" title="Desktop">
+        <i class="fa-solid fa-desktop"></i>
+      </button>
+      <button class="btn-ctrl" data-view="tablet" title="Tablet">
+        <i class="fa-solid fa-tablet-screen-button"></i>
+      </button>
+      <button class="btn-ctrl" data-view="mobile" title="Mobile">
+        <i class="fa-solid fa-mobile-screen"></i>
+      </button>
+    </div>
+
+    <!-- Theme / Mode -->
+    <div class="topbar-group">
+      <button class="btn-ctrl" id="toggle-mode-btn" title="Toggle Layout Mode">
+        <i class="fa-solid fa-file-lines"></i>
+      </button>
+      <button class="btn-ctrl" id="toggle-theme-btn" title="Toggle Blueprint Grid">
+        <i class="fa-solid fa-layer-group"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- =================================================================
+       CANVAS AREA
+       ================================================================= -->
+  <main class="wf-canvas">
+    
+    <div class="device-frame" id="device-frame">
+      
+      <!-- Device Chrome Top Strip -->
+      <div class="device-header">
+        <div class="device-dots">
+          <span class="device-dot"></span>
+          <span class="device-dot"></span>
+          <span class="device-dot"></span>
+        </div>
+        <div class="device-url-bar"></div>
+        <div class="device-dot" style="border-radius: var(--radius-sm);"></div>
+      </div>
+
+      <!-- =============================================================
+           VIEW 1: WEB DASHBOARD SKELETON WIREFRAME (NO TEXT)
+           ============================================================= -->
+      <div id="view-web">
+
+        <!-- 1. NAVBAR -->
+        <nav class="sec-navbar">
+          <!-- Brand -->
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div class="icon-square"></div>
+            <span class="skel-bar h-md w-40" style="min-width: 60px;"></span>
+          </div>
+
+          <!-- Nav Links -->
+          <div class="nav-links-row">
+            <span class="skel-bar h-sm" style="width: 36px;"></span>
+            <span class="skel-bar h-sm" style="width: 44px;"></span>
+            <div class="skel-pill" style="height: 20px; width: 68px;"></div>
+            <span class="skel-bar h-sm" style="width: 34px;"></span>
+            <span class="skel-bar h-sm" style="width: 50px;"></span>
+            <span class="skel-bar h-sm" style="width: 60px;"></span>
+            <span class="skel-bar h-sm" style="width: 36px;"></span>
+            <span class="skel-bar h-sm" style="width: 44px;"></span>
+          </div>
+
+          <!-- Nav Actions -->
+          <div class="nav-actions-row">
+            <div class="icon-circle"></div>
+            <div class="icon-circle"></div>
+            <div class="skel-btn skel-btn-sm" style="width: 55px;"></div>
+            <div class="icon-circle"></div>
+            <div class="icon-square keep"></div>
+          </div>
+        </nav>
+
+        <!-- 2. HERO SECTION -->
+        <section class="sec-hero">
+          <div class="hero-box">
+            <!-- Top Status Strip -->
+            <div class="hero-top-status">
+              <div class="icon-circle" style="width: 8px; height: 8px; border:none; background: var(--wf-skel-dark);"></div>
+              <span class="skel-bar h-sm w-35"></span>
+            </div>
+
+            <div class="hero-body-row">
+              <!-- Avatar Column -->
+              <div class="hero-avatar-area">
+                <div class="skel-avatar"></div>
+                <div class="skel-btn skel-btn-sm" style="width: 76px;"></div>
+                <div class="skel-tag" style="width: 56px;"></div>
+              </div>
+
+              <!-- Content Column -->
+              <div class="hero-content-area">
+                <span class="skel-bar h-sm w-15"></span>
+                <span class="skel-bar h-xl w-60"></span>
+                <span class="skel-bar h-md w-45"></span>
+
+                <!-- Bio Paragraph Lines -->
+                <div style="display:flex; flex-direction:column; gap:6px; margin: 4px 0;">
+                  <span class="skel-bar h-sm w-100"></span>
+                  <span class="skel-bar h-sm w-95"></span>
+                  <span class="skel-bar h-sm w-70"></span>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta-cluster">
+                  <div class="skel-btn skel-btn-primary" style="width: 90px;">
+                    <span class="skel-bar h-sm w-75"></span>
+                  </div>
+                  <div class="skel-btn" style="width: 105px;">
+                    <span class="skel-bar h-sm w-75"></span>
+                  </div>
+                  <div class="skel-btn" style="width: 80px;">
+                    <span class="skel-bar h-sm w-70"></span>
+                  </div>
+                  <div class="skel-btn" style="width: 95px;">
+                    <span class="skel-bar h-sm w-70"></span>
+                  </div>
+                </div>
+
+                <!-- Contact Pills -->
+                <div class="hero-pill-cluster">
+                  <div class="skel-pill" style="width: 105px;"></div>
+                  <div class="skel-pill" style="width: 140px;"></div>
+                  <div class="skel-pill" style="width: 120px;"></div>
+                  <div class="skel-pill" style="width: 95px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. FEATURED PROJECTS SECTION -->
+        <section class="sec-projects">
+          <!-- Section Header -->
+          <div style="display:flex; flex-direction:column; gap:8px; margin-bottom: 16px;">
+            <div class="skel-tag" style="width: 110px;"></div>
+            <span class="skel-bar h-lg w-45"></span>
+            <span class="skel-bar h-sm w-70"></span>
+          </div>
+
+          <!-- Filter Tabs -->
+          <div class="projects-filter-row">
+            <div class="skel-btn skel-btn-sm skel-btn-primary" style="width: 75px;"></div>
+            <div class="skel-btn skel-btn-sm" style="width: 100px;"></div>
+            <div class="skel-btn skel-btn-sm" style="width: 110px;"></div>
+            <div class="skel-btn skel-btn-sm" style="width: 90px;"></div>
+          </div>
+
+          <!-- 3-Col Projects Grid -->
+          <div class="projects-grid-3col">
+            <!-- Project 1 -->
+            <div class="project-wire-card">
+              <div class="skel-img-box project-wire-thumb"></div>
+              <div class="project-wire-content">
+                <span class="skel-bar h-md w-85"></span>
+                <span class="skel-bar h-sm w-100"></span>
+                <span class="skel-bar h-sm w-60"></span>
+                <div style="display: flex; gap: 6px; margin: 4px 0;">
+                  <div class="skel-tag" style="width: 45px;"></div>
+                  <div class="skel-tag" style="width: 55px;"></div>
+                  <div class="skel-tag" style="width: 45px;"></div>
+                </div>
+                <div class="skel-btn skel-btn-sm skel-btn-primary" style="width: 100%; margin-top: auto;"></div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-wire-card">
+              <div class="skel-img-box project-wire-thumb"></div>
+              <div class="project-wire-content">
+                <span class="skel-bar h-md w-80"></span>
+                <span class="skel-bar h-sm w-100"></span>
+                <span class="skel-bar h-sm w-75"></span>
+                <div style="display: flex; gap: 6px; margin: 4px 0;">
+                  <div class="skel-tag" style="width: 50px;"></div>
+                  <div class="skel-tag" style="width: 45px;"></div>
+                  <div class="skel-tag" style="width: 55px;"></div>
+                </div>
+                <div style="display: flex; gap: 8px; margin-top: auto;">
+                  <div class="skel-btn skel-btn-sm skel-btn-primary" style="flex:1;"></div>
+                  <div class="skel-btn skel-btn-sm" style="flex:1;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-wire-card">
+              <div class="skel-img-box project-wire-thumb"></div>
+              <div class="project-wire-content">
+                <span class="skel-bar h-md w-90"></span>
+                <span class="skel-bar h-sm w-100"></span>
+                <span class="skel-bar h-sm w-65"></span>
+                <div style="display: flex; gap: 6px; margin: 4px 0;">
+                  <div class="skel-tag" style="width: 40px;"></div>
+                  <div class="skel-tag" style="width: 55px;"></div>
+                  <div class="skel-tag" style="width: 45px;"></div>
+                </div>
+                <div class="skel-btn skel-btn-sm skel-btn-primary" style="width: 100%; margin-top: auto;"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. SECURITY LAB / SIMULATOR -->
+        <section class="sec-simulator">
+          <div class="simulator-box">
+            <!-- Header -->
+            <div class="simulator-header">
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <div class="icon-square"></div>
+                <div>
+                  <span class="skel-bar h-md" style="width: 180px; margin-bottom: 4px;"></span>
+                  <span class="skel-bar h-sm" style="width: 240px;"></span>
+                </div>
+              </div>
+              <div class="skel-tag" style="width: 80px; height: 24px;"></div>
+            </div>
+
+            <!-- Split Pane -->
+            <div class="simulator-split">
+              <!-- Left: Inbox List -->
+              <div class="inbox-list-col">
+                <div class="inbox-item-row active">
+                  <div class="skel-tag" style="width: 45px;"></div>
+                  <span class="skel-bar h-sm w-85"></span>
+                  <span class="skel-bar h-sm w-65"></span>
+                </div>
+                <div class="inbox-item-row">
+                  <div class="skel-tag" style="width: 45px;"></div>
+                  <span class="skel-bar h-sm w-75"></span>
+                  <span class="skel-bar h-sm w-60"></span>
+                </div>
+                <div class="inbox-item-row">
+                  <div class="skel-tag" style="width: 45px;"></div>
+                  <span class="skel-bar h-sm w-80"></span>
+                  <span class="skel-bar h-sm w-70"></span>
+                </div>
+              </div>
+
+              <!-- Right: Email Inspector -->
+              <div class="email-view-col">
+                <div class="email-meta-box">
+                  <span class="skel-bar h-sm w-60"></span>
+                  <span class="skel-bar h-sm w-80"></span>
+                  <span class="skel-bar h-sm w-40"></span>
+                </div>
+
+                <div style="display:flex; flex-direction:column; gap:6px;">
+                  <span class="skel-bar h-sm w-100"></span>
+                  <span class="skel-bar h-sm w-95"></span>
+                  <span class="skel-bar h-sm w-85"></span>
+                </div>
+
+                <div class="fake-link-strip">
+                  <span class="skel-bar h-sm w-75"></span>
+                </div>
+
+                <!-- Decision Buttons -->
+                <div class="decision-btn-row">
+                  <span class="skel-bar h-sm w-35"></span>
+                  <div style="display: flex; gap: 8px;">
+                    <div class="skel-btn skel-btn-sm" style="width: 90px;"></div>
+                    <div class="skel-btn skel-btn-sm skel-btn-primary" style="width: 100px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5. TWO-COLUMN DASHBOARD GRID -->
+        <section class="sec-dashboard">
+          
+          <!-- LEFT COLUMN -->
+          <div class="dashboard-col">
+            
+            <!-- About Me Card -->
+            <div class="skel-card">
+              <div class="skel-card-header">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <div class="icon-square"></div>
+                  <span class="skel-bar h-md" style="width: 90px;"></span>
+                </div>
+                <div class="skel-tag" style="width: 45px;"></div>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:6px; margin-bottom: 12px;">
+                <span class="skel-bar h-sm w-100"></span>
+                <span class="skel-bar h-sm w-95"></span>
+                <span class="skel-bar h-sm w-75"></span>
+              </div>
+              <div style="border-left: 3px solid var(--wf-border-med); padding-left: 10px; margin-bottom: 14px;">
+                <span class="skel-bar h-sm w-85"></span>
+              </div>
+              <div class="stat-grid-3col">
+                <div class="stat-box">
+                  <span class="skel-bar h-md w-60"></span>
+                  <span class="skel-bar h-sm w-70"></span>
+                </div>
+                <div class="stat-box">
+                  <span class="skel-bar h-md w-40"></span>
+                  <span class="skel-bar h-sm w-70"></span>
+                </div>
+                <div class="stat-box">
+                  <span class="skel-bar h-md w-50"></span>
+                  <span class="skel-bar h-sm w-70"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Card -->
+            <div class="skel-card">
+              <div class="skel-card-header">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <div class="icon-square"></div>
+                  <span class="skel-bar h-md" style="width: 120px;"></span>
+                </div>
+                <div class="skel-tag" style="width: 55px;"></div>
+              </div>
+              <div class="contact-row">
+                <div style="display:flex; flex-direction:column; gap:4px; flex:1;">
+                  <span class="skel-bar h-sm w-30"></span>
+                  <span class="skel-bar h-sm w-50"></span>
+                </div>
+                <div class="icon-square" style="width: 24px; height: 24px;"></div>
+              </div>
+              <div class="contact-row">
+                <div style="display:flex; flex-direction:column; gap:4px; flex:1;">
+                  <span class="skel-bar h-sm w-30"></span>
+                  <span class="skel-bar h-sm w-60"></span>
+                </div>
+                <div class="icon-square" style="width: 24px; height: 24px;"></div>
+              </div>
+              <div class="contact-row" style="border:none; margin:0; padding:0;">
+                <div style="display:flex; flex-direction:column; gap:4px; flex:1;">
+                  <span class="skel-bar h-sm w-30"></span>
+                  <span class="skel-bar h-sm w-80"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skills Card -->
+            <div class="skel-card">
+              <div class="skel-card-header">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <div class="icon-square"></div>
+                  <span class="skel-bar h-md" style="width: 140px;"></span>
+                </div>
+                <div class="skel-tag" style="width: 50px;"></div>
+              </div>
+              
+              <div style="display:flex; justify-content:space-between; margin-bottom:2px;">
+                <span class="skel-bar h-sm w-25"></span>
+                <span class="skel-bar h-sm w-20"></span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 80%;"></div></div>
+
+              <div style="display:flex; justify-content:space-between; margin-bottom:2px;">
+                <span class="skel-bar h-sm w-30"></span>
+                <span class="skel-bar h-sm w-20"></span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 70%;"></div></div>
+
+              <div style="display:flex; justify-content:space-between; margin-bottom:2px;">
+                <span class="skel-bar h-sm w-35"></span>
+                <span class="skel-bar h-sm w-20"></span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 75%;"></div></div>
+
+              <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:12px;">
+                <div class="skel-pill" style="width: 80px;"></div>
+                <div class="skel-pill" style="width: 65px;"></div>
+                <div class="skel-pill" style="width: 90px;"></div>
+                <div class="skel-pill" style="width: 105px;"></div>
+              </div>
+            </div>
+
+            <!-- Languages Card -->
+            <div class="skel-card">
+              <div class="skel-card-header">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <div class="icon-square"></div>
+                  <span class="skel-bar h-md" style="width: 95px;"></span>
+                </div>
+                <div class="skel-tag" style="width: 45px;"></div>
+              </div>
+              <div style="display:flex; justify-content:space-between; margin-bottom:2px;">
+                <span class="skel-bar h-sm w-25"></span>
+                <span class="skel-bar h-sm w-30"></span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 85%;"></div></div>
+
+              <div style="display:flex; justify-content:space-between; margin-bottom:2px;">
+                <span class="skel-bar h-sm w-25"></span>
+                <span class="skel-bar h-sm w-30"></span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 100%;"></div></div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT COLUMN -->
+          <div class="dashboard-col">
+            
+            <!-- Tools & Stack Card -->
+            <div class="skel-card">
+              <div class="skel-card-header">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <div class="icon-square"></div>
+                  <span class="skel-bar h-md" style="width: 110px;"></span>
+                </div>
+                <div class="skel-tag" style="width: 55px;"></div>
+              </div>
+
+              <div class="tool-entry-row">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <div class="icon-square" style="width:26px; height:26px;"></div>
+                  <span class="skel-bar h-sm" style="width: 120px;"></span>
+                </div>
+                <div class="skel-tag" style="width: 40px;"></div>
+              </div>
+
+              <div class="tool-entry-row">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <div class="icon-square" style="width:26px; height:26px;"></div>
+                  <span class="skel-bar h-sm" style="width: 90px;"></span>
+                </div>
+                <div class="skel-tag" style="width: 50px;"></div>
+              </div>
+
+              <div class="tool-entry-row">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <div class="icon-square" style="width:26px; height:26px;"></div>
+                  <span class="skel-bar h-sm" style="width: 105px;"></span>
+                </div>
+                <div class="skel-tag" style="width: 45px;"></div>
+              </div>
+            </div>
+
+            <!-- University & Education Card -->
+            <div class="skel-card">
+              <div class="skel-card-header">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <div class="icon-square"></div>
+                  <span class="skel-bar h-md" style="width: 130px;"></span>
+                </div>
+                <div class="skel-tag" style="width: 50px;"></div>
+              </div>
+
+              <div style="border-left: 2px solid var(--wf-border); padding-left: 14px; position:relative;">
+                <div class="icon-circle" style="position:absolute; left:-5px; top:0; width:8px; height:8px; border:none; background:var(--wf-border);"></div>
+                <span class="skel-bar h-md w-35" style="margin-bottom: 6px;"></span>
+                <span class="skel-bar h-sm w-55" style="margin-bottom: 10px;"></span>
+                <div style="border:1.5px solid var(--wf-border-light); padding:10px; border-radius:var(--radius-sm); background:var(--wf-box-bg);">
+                  <span class="skel-bar h-sm w-75" style="margin-bottom: 6px;"></span>
+                  <span class="skel-bar h-sm w-95"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certifications Card -->
+            <div class="skel-card">
+              <div class="skel-card-header">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <div class="icon-square"></div>
+                  <span class="skel-bar h-md" style="width: 100px;"></span>
+                </div>
+                <div class="skel-tag" style="width: 45px;"></div>
+              </div>
+
+              <div class="tool-entry-row">
+                <span class="skel-bar h-sm w-70"></span>
+                <div class="skel-tag" style="width: 40px;"></div>
+              </div>
+              <div class="tool-entry-row">
+                <span class="skel-bar h-sm w-65"></span>
+                <div class="skel-tag" style="width: 40px;"></div>
+              </div>
+              <div class="tool-entry-row">
+                <span class="skel-bar h-sm w-75"></span>
+                <div class="skel-tag" style="width: 40px;"></div>
+              </div>
+              <div class="tool-entry-row">
+                <span class="skel-bar h-sm w-60"></span>
+                <div class="skel-tag" style="width: 40px;"></div>
+              </div>
+            </div>
+
+            <!-- Message Form Card -->
+            <div class="skel-card">
+              <div class="skel-card-header">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <div class="icon-square"></div>
+                  <span class="skel-bar h-md" style="width: 130px;"></span>
+                </div>
+                <div class="skel-tag" style="width: 45px;"></div>
+              </div>
+
+              <span class="skel-bar h-sm w-25" style="margin-bottom: 4px;"></span>
+              <div class="input-wire-box"></div>
+
+              <span class="skel-bar h-sm w-25" style="margin-bottom: 4px;"></span>
+              <div class="input-wire-box"></div>
+
+              <span class="skel-bar h-sm w-20" style="margin-bottom: 4px;"></span>
+              <div class="input-wire-box"></div>
+
+              <span class="skel-bar h-sm w-20" style="margin-bottom: 4px;"></span>
+              <div class="textarea-wire-box"></div>
+
+              <div class="skel-btn skel-btn-primary" style="width: 100%;">
+                <span class="skel-bar h-sm w-30"></span>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- 6. FOOTER -->
+        <footer class="sec-footer">
+          <span class="skel-bar h-sm w-35"></span>
+          <div class="icon-square" style="width: 28px; height: 28px;"></div>
+        </footer>
+
+      </div>
+
+
+      <!-- =============================================================
+           VIEW 2: CLASSIC 1:1 RESUME DOCUMENT WIREFRAME (NO TEXT)
+           ============================================================= -->
+      <div id="view-resume" style="display: none; padding: 20px;">
+        <div class="sec-resume-sheet">
+          
+          <!-- Resume Top Header -->
+          <div class="resume-header-row">
+            <div class="skel-avatar" style="width: 75px; height: 75px;"></div>
+            <div style="display:flex; flex-direction:column; gap:6px; flex:1;">
+              <div class="icon-square" style="width: 18px; height: 18px;"></div>
+              <span class="skel-bar h-xl w-40"></span>
+              <span class="skel-bar h-sm w-35"></span>
+            </div>
+          </div>
+
+          <!-- Resume 2 Columns -->
+          <div class="resume-columns">
+            
+            <!-- Left Side Column -->
+            <div class="resume-left-col">
+              <div>
+                <span class="skel-bar h-sm w-40" style="margin-bottom: 6px;"></span>
+                <span class="skel-bar h-sm w-100" style="margin-bottom: 4px;"></span>
+                <span class="skel-bar h-sm w-90" style="margin-bottom: 4px;"></span>
+                <span class="skel-bar h-sm w-70"></span>
+              </div>
+
+              <div>
+                <span class="skel-bar h-sm w-35" style="margin-bottom: 6px;"></span>
+                <span class="skel-bar h-sm w-60" style="margin-bottom: 4px;"></span>
+                <span class="skel-bar h-sm w-70" style="margin-bottom: 4px;"></span>
+                <span class="skel-bar h-sm w-85"></span>
+              </div>
+
+              <div>
+                <span class="skel-bar h-sm w-30" style="margin-bottom: 6px;"></span>
+                <span class="skel-bar h-sm w-50" style="margin-bottom: 4px;"></span>
+                <span class="skel-bar h-sm w-60" style="margin-bottom: 4px;"></span>
+                <span class="skel-bar h-sm w-55" style="margin-bottom: 4px;"></span>
+                <span class="skel-bar h-sm w-45"></span>
+              </div>
+
+              <div>
+                <span class="skel-bar h-sm w-35" style="margin-bottom: 6px;"></span>
+                <span class="skel-bar h-sm w-40" style="margin-bottom: 4px;"></span>
+                <span class="skel-bar h-sm w-40"></span>
+              </div>
+            </div>
+
+            <!-- Right Side Column -->
+            <div class="resume-right-col">
+              <div>
+                <span class="skel-bar h-sm w-25" style="margin-bottom: 8px;"></span>
+                <span class="skel-bar h-sm w-45" style="margin-bottom: 4px;"></span>
+                <span class="skel-bar h-sm w-35" style="margin-bottom: 4px;"></span>
+                <span class="skel-bar h-sm w-40"></span>
+              </div>
+
+              <div style="margin-top: 10px;">
+                <span class="skel-bar h-sm w-35" style="margin-bottom: 8px;"></span>
+                <span class="skel-bar h-md w-30" style="margin-bottom: 4px;"></span>
+                <span class="skel-bar h-sm w-50"></span>
+              </div>
+
+              <div style="margin-top: 10px;">
+                <span class="skel-bar h-sm w-35" style="margin-bottom: 8px;"></span>
+                <span class="skel-bar h-sm w-70" style="margin-bottom: 4px;"></span>
+                <span class="skel-bar h-sm w-65" style="margin-bottom: 4px;"></span>
+                <span class="skel-bar h-sm w-60" style="margin-bottom: 4px;"></span>
+                <span class="skel-bar h-sm w-55"></span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="wireframe.js"></script>
+</body>
+</html>
